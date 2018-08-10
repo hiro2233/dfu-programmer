@@ -16,6 +16,10 @@ src/*.o
 src/*.exe
 src/*.hex
 *.tar.gz
+bin/*
+obj/*
+*.depend
+*.layout
 
 # tab completion file
 dfu_programmer
