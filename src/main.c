@@ -29,7 +29,11 @@
 #include <usb.h>
 #endif
 
+#ifdef __MINGW32__
+#include "config_mingw.h"
+#else
 #include "config.h"
+#endif // __MINGW32__
 #include "dfu-device.h"
 #include "dfu.h"
 #include "atmel.h"

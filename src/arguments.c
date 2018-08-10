@@ -26,7 +26,11 @@
 
 #include "dfu-bool.h"
 #include "dfu-device.h"
+#ifdef __MINGW32__
+#include "config_mingw.h"
+#else
 #include "config.h"
+#endif // __MINGW32__
 #include "arguments.h"
 
 // Modes used to display the list of targets.
