@@ -24,7 +24,11 @@
 #include <string.h>
 
 #include "dfu-bool.h"
+#ifdef __MINGW32__
+#include "config_mingw.h"
+#else
 #include "config.h"
+#endif // __MINGW32__
 #include "commands.h"
 #include "arguments.h"
 #include "intel_hex.h"
